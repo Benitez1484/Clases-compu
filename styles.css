@@ -600,6 +600,131 @@ li::before {
     background-size: contain;
 }
 
+/* Estilos específicos para la clase 2 - Temática verde */
+.class-detail-green .objective {
+    background-color: rgba(52, 168, 83, 0.08);
+    border-left: 5px solid var(--secondary-color);
+}
+
+.class-detail-green .objective h3 {
+    color: var(--secondary-color);
+}
+
+.class-detail-green .content h3, 
+.class-detail-green .exercises h3, 
+.class-detail-green .product h3, 
+.class-detail-green .key-takeaways h3 {
+    color: var(--secondary-color);
+}
+
+/* Secciones temáticas */
+.topic-section {
+    margin-bottom: 2rem;
+    padding: 1.2rem;
+    background-color: rgba(52, 168, 83, 0.05);
+    border-radius: var(--border-radius);
+    border-left: 4px solid var(--secondary-color);
+}
+
+.topic-section h4 {
+    color: var(--secondary-color);
+    font-family: var(--header-font);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+/* Cajas de ejemplos */
+.example-box {
+    background-color: rgba(251, 188, 5, 0.1);
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    border-left: 3px solid var(--accent-color);
+}
+
+.example-complete {
+    background-color: rgba(52, 168, 83, 0.1);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    margin: 1rem 0;
+}
+
+.prompt-final {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    font-style: italic;
+}
+
+/* Lista de pasos */
+.steps-list {
+    counter-reset: step-counter;
+    list-style: none;
+    margin-left: 0;
+}
+
+.steps-list li {
+    counter-increment: step-counter;
+    margin-bottom: 1rem;
+    padding-left: 3rem;
+    position: relative;
+}
+
+.steps-list li::before {
+    content: counter(step-counter);
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: var(--secondary-color);
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* Ejercicios */
+.exercise-item {
+    background-color: rgba(66, 133, 244, 0.05);
+    padding: 1.2rem;
+    border-radius: var(--border-radius);
+    margin-bottom: 1.5rem;
+    border-left: 4px solid var(--primary-color);
+}
+
+.exercise-item h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.8rem;
+    font-family: var(--header-font);
+    font-size: 1.1rem;
+}
+
+/* Puntos clave */
+.key-takeaways {
+    background-color: rgba(52, 168, 83, 0.08);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    margin-bottom: 2rem;
+    border: 2px solid rgba(52, 168, 83, 0.2);
+}
+
+.key-takeaways h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.key-takeaways ul li::before {
+    content: '';
+    color: var(--secondary-color);
+}
+
 /* Estilos para la vista previa de la presentación */
 .presentation-preview {
     margin-top: 2rem;
